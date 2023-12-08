@@ -1,4 +1,3 @@
-const a = 1;
-console.log(a);
-a = 'test';
-console.log(a);
+let arr = [{ name: "Вася" }, { name: "Петя" }];
+console.log(arr.map((e) => e.name)
+.reduce((acc, e) => (acc += e[0]), ""));
